@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3261AA5615C322E80076143F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261AA5515C322E80076143F /* Foundation.framework */; };
+		3261AA6115C322E80076143F /* NoteSaver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3261AA6015C322E80076143F /* NoteSaver.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3261AA5215C322E80076143F /* NoteSaver.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NoteSaver.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3261AA5515C322E80076143F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3261AA5A15C322E80076143F /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		3261AA5B15C322E80076143F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		3261AA5D15C322E80076143F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		3261AA5E15C322E80076143F /* NoteSaver-Prefix.pch */ = {isa = PBXFileReference; path = "NoteSaver-Prefix.pch"; sourceTree = "<group>"; };
+		3261AA5F15C322E80076143F /* NoteSaver.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = NoteSaver.xm; sourceTree = "<group>"; };
+		3261AA6015C322E80076143F /* NoteSaver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NoteSaver.mm; sourceTree = "<group>"; };
+		3261AA6515C322E80076143F /* NoteSaver.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NoteSaver.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/NoteSaver.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3261AA4E15C322E80076143F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3261AA5615C322E80076143F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3261AA4515C322E80076143F = {
+			isa = PBXGroup;
+			children = (
+				3261AA5715C322E80076143F /* NoteSaver */,
+				3261AA5415C322E80076143F /* Frameworks */,
+				3261AA5315C322E80076143F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3261AA5315C322E80076143F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA5215C322E80076143F /* NoteSaver.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3261AA5415C322E80076143F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA5515C322E80076143F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3261AA5715C322E80076143F /* NoteSaver */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA5F15C322E80076143F /* NoteSaver.xm */,
+				3261AA6015C322E80076143F /* NoteSaver.mm */,
+				3261AA5815C322E80076143F /* Package */,
+				3261AA5C15C322E80076143F /* Supporting Files */,
+			);
+			path = NoteSaver;
+			sourceTree = "<group>";
+		};
+		3261AA5815C322E80076143F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA5915C322E80076143F /* DEBIAN */,
+				3261AA6215C322E80076143F /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		3261AA5915C322E80076143F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA5A15C322E80076143F /* control.txt */,
+				3261AA5B15C322E80076143F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		3261AA5C15C322E80076143F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA5D15C322E80076143F /* PackageVersion.plist */,
+				3261AA5E15C322E80076143F /* NoteSaver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3261AA6215C322E80076143F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA6315C322E80076143F /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		3261AA6315C322E80076143F /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA6415C322E80076143F /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		3261AA6415C322E80076143F /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				3261AA6515C322E80076143F /* NoteSaver.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3261AA4F15C322E80076143F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3261AA5115C322E80076143F /* NoteSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3261AA6815C322E80076143F /* Build configuration list for PBXNativeTarget "NoteSaver" */;
+			buildPhases = (
+				3261AA4C15C322E80076143F /* ShellScript */,
+				3261AA4D15C322E80076143F /* Sources */,
+				3261AA4E15C322E80076143F /* Frameworks */,
+				3261AA4F15C322E80076143F /* Headers */,
+				3261AA5015C322E80076143F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteSaver;
+			productName = NoteSaver;
+			productReference = 3261AA5215C322E80076143F /* NoteSaver.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3261AA4715C322E80076143F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3261AA4A15C322E80076143F /* Build configuration list for PBXProject "NoteSaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3261AA4515C322E80076143F;
+			productRefGroup = 3261AA5315C322E80076143F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3261AA5115C322E80076143F /* NoteSaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3261AA4C15C322E80076143F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		3261AA5015C322E80076143F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3261AA4D15C322E80076143F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3261AA6115C322E80076143F /* NoteSaver.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3261AA6615C322E80076143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		3261AA6715C322E80076143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		3261AA6915C322E80076143F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoteSaver/NoteSaver-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		3261AA6A15C322E80076143F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoteSaver/NoteSaver-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3261AA4A15C322E80076143F /* Build configuration list for PBXProject "NoteSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3261AA6615C322E80076143F /* Release */,
+				3261AA6715C322E80076143F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3261AA6815C322E80076143F /* Build configuration list for PBXNativeTarget "NoteSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3261AA6915C322E80076143F /* Release */,
+				3261AA6A15C322E80076143F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3261AA4715C322E80076143F /* Project object */;
+}
